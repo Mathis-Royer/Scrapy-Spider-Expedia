@@ -1,6 +1,7 @@
 # Scrapy-Spider-Expedia
 Projet de scraping du site web "http://expedia.fr/Flights-Search" utilisant le framework Scrapy.
 
+
 ## Installation des modules
 
 pour une installation correct de scrapy :
@@ -13,6 +14,9 @@ pip3 install scrapy
 pip3 install scrapy scrapy-playwright : pour les page javascript
 playwright install
 ```
+
+
+
 ## Settings.py
 
 Modification déjà effectuée dans le fichier settings.py
@@ -29,6 +33,8 @@ DOWNLOAD HANDLERS = {
 
 	TWISTED_REACTOR = « twisted.internet.asyncioreactor.AsyncioSelectorReactor" 
 ```
+
+
 
 ## Execution
 Éxécuter simplement le fichier main_expedia.py ainsi :
@@ -49,6 +55,9 @@ Le fichier main_expedia.py executera ensuite cette commande afin de retourner un
 ```bash
 scrapy crawl expedia_spider -o output.json -a origin='+origin+' -a destination='+destination+' -a depart_date='+depart_date+' -a return_date='+return_date+' --nolog
 ```
+
+
+
 ## Resultats
 ```json
 [
