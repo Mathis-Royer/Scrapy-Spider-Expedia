@@ -30,7 +30,7 @@ DOWNLOAD HANDLERS = {
 	TWISTED_REACTOR = « twisted.internet.asyncioreactor.AsyncioSelectorReactor" 
 ```
 
-##Execution
+## Execution
 Éxécuter simplement le fichier main_expedia.py ainsi :
 ```bash
 python3 main_expedia.py
@@ -49,7 +49,7 @@ Le fichier main_expedia.py executera ensuite cette commande afin de retourner un
 ```bash
 scrapy crawl expedia_spider -o output.json -a origin='+origin+' -a destination='+destination+' -a depart_date='+depart_date+' -a return_date='+return_date+' --nolog
 ```
-##Resultats
+## Resultats
 ```json
 [
 {"Flight_number": "", "Origin": "MPL", "Destination": "ORY", "Departure_time": "07 h 50", "Arrival_time": "09 h 20", "comfort_title": "", "price": "67 €"},
